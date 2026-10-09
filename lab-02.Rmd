@@ -1,6 +1,6 @@
 ---
 title: "Lab 02 - Global plastic waste"
-author: "Team Name: Fiona Reji, Jess Crocker, Tanya Abraham"
+author: "Team Name: Fiona Reji, Jess Crocker, Tanya Mary Abraham"
 date: "`r Sys.Date()`"
 output: html_document
 ---
