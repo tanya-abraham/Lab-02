@@ -87,6 +87,15 @@ plastic_data_all %>% head(n = 10)
 
 
 
+
+
+coastal_data <- table(plastic_data_all$region)
+coastal_data
+
+
+
+# Africa has the most number of coastal regions. 
+
 ```
 
 
