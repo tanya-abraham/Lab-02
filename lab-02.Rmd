@@ -87,10 +87,14 @@ plastic_data_all %>% head(n = 10)
 
 
 
+coastal_data <- plastic_data_all %>%
+  group_by(region) %>%
+  summarise(n = n())
 
-
-coastal_data <- table(plastic_data_all$region)
 coastal_data
+
+
+
 
 
 

@@ -431,17 +431,20 @@ plastic_data_all %&gt;% head(n = 10)</code></pre>
 
 
 
+coastal_data &lt;- plastic_data_all %&gt;%
+  group_by(region) %&gt;%
+  summarise(n = n())
 
-
-coastal_data &lt;- table(plastic_data_all$region)
 coastal_data</code></pre>
-<pre><code>## 
-##                          Africa                            Asia 
-##                              43                              39 
-##                          Europe Latin America and The Caribbean 
-##                              31                              34 
-##                   North America                         Oceania 
-##                               2                              10</code></pre>
+<pre><code>## # A tibble: 6 × 2
+##   region                              n
+##   &lt;chr&gt;                           &lt;int&gt;
+## 1 Africa                             43
+## 2 Asia                               39
+## 3 Europe                             31
+## 4 Latin America and The Caribbean    34
+## 5 North America                       2
+## 6 Oceania                            10</code></pre>
 <pre class="r"><code># Africa has the most number of coastal regions. </code></pre>
 </div>
 <div id="ex-2." class="section level3">
